@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School Lost & Found - Absen 17</title>
+  <style>
+    body { font-family: sans-serif; background: #f4f4f9; padding: 20px; }
+    .container { max-width: 600px; margin: auto; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    .summary { background: #e0f2fe; padding: 10px; border-radius: 5px; margin-bottom: 15px; }
+    .form-box { background: #fafafa; padding: 15px; border: 1px solid #ddd; border-radius: 5px; display: flex; flex-direction: column; gap: 8px; margin-bottom: 15px; }
+    .filter-box { display: flex; gap: 10px; margin-bottom: 15px; }
+    .filter-box input { flex: 1; }
+    input, select, button { padding: 8px; font-size: 14px; border: 1px solid #ccc; border-radius: 4px; }
+    #btn-tambah { background: #2563eb; color: #fff; font-weight: bold; border: none; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>School Lost & Found</h2>
+    <p style="color: #666; font-size: 14px;">M dzaky ka - Absen 17</p>
+
+    <div class="summary">
+      Total Barang: <b id="total">0</b> | Belum Diklaim: <b id="unclaimed">0</b>
+    </div>
+
+    <div class="form-box">
+      <b>Tambah Barang Temuan:</b>
+      <input type="text" id="name" placeholder="Nama Barang (misal: Kunci Motor)">
+      <input type="text" id="category" placeholder="Kategori (misal: Otomotif/Buku)">
+      <input type="text" id="location" placeholder="Lokasi Ditemukan (misal: Parkiran)">
+      <input type="date" id="dateFound">
+      <input type="text" id="finderName" placeholder="Nama Penemu">
+      <button type="button" id="btn-tambah">Tambah Data</button>
+    </div>
+
+    <div class="filter-box">
+      <input type="text" id="search" placeholder="Cari barang / lokasi...">
+      <select id="filter">
+        <option value="ALL">Semua Status</option>
+        <option value="Belum Diklaim">Belum Diklaim</option>
+        <option value="Sedang Diproses">Sedang Diproses</option>
+        <option value="Sudah Diklaim">Sudah Diklaim</option>
+      </select>
+    </div>
+
+    <div id="list"></div>
+  </div>
+
+  <script type="module" src="./src/main.ts"></script>
+</body>
+</html>

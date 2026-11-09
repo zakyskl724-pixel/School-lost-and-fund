@@ -1,0 +1,15 @@
+body { font-family: Arial, sans-serif; background: #f4f4f9; padding: 20px; color: #333; }
+.container { max-width: 650px; margin: auto; background: #fff; padding: 25px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+.summary { background: #e0f2fe; padding: 12px; border-radius: 6px; margin-bottom: 15px; }
+.form-box { background: #f8fafc; padding: 15px; border-radius: 6px; border: 1px solid #e2e8f0; display: flex; flex-direction: column; gap: 10px; margin-bottom: 15px; }
+.form-box h3 { margin: 0 0 5px 0; }
+.filter-box { display: flex; gap: 10px; margin-bottom: 15px; }
+.filter-box input { flex: 1; }
+input, select, button { padding: 9px; border: 1px solid #cbd5e1; border-radius: 4px; font-size: 14px; }
+.form-box button { background: #2563eb; color: #fff; border: none; font-weight: bold; cursor: pointer; }
+.form-box button:hover { background: #1d4ed8; }
+.card { border: 1px solid #e2e8f0; padding: 15px; margin-top: 10px; border-radius: 6px; background: #fafafa; }
+.card h3 { margin: 0 0 6px 0; }
+.card p { margin: 4px 0; font-size: 14px; color: #555; }
+.btn-del { background: #ef4444; color: #fff; border: none; padding: 6px 12px; border-radius: 4px; cursor: pointer; }
+.btn-del:hover { background: #dc2626; }
